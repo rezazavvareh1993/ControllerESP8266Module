@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.controllerEsp8266Module.Activities.ConnectToModemAvtivity">
+
+    <ImageView
+        android:id="@+id/image_logo_aboutAs"
+        android:layout_width="282dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edt_ssid_modem"
+        app:srcCompat="@drawable/shian11" />
+
+    <EditText
+        android:id="@+id/edt_ssid_modem"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:hint="SSID"
+        android:padding="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_logo_aboutAs"
+        app:layout_constraintBottom_toTopOf="@id/edt_password_modem"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <EditText
+        android:id="@+id/edt_password_modem"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_ssid_modem"
+        app:layout_constraintBottom_toTopOf="@id/btn_connect_to_modem_connect_to_modem_activity"
+        tools:layout_editor_absoluteY="741dp" />
+
+    <Button
+        android:id="@+id/btn_connect_to_modem_connect_to_modem_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_shape"
+        android:text="Connect"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_password_modem"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

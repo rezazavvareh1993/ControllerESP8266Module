@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SSH Controller</string>
+    <string name="a_device">تک وسیله</string>
+    <string name="smart_house">خانه هوشمند</string>
+    <string name="input_port">پورت خود را وارد کنید</string>
+    <string name="input_ip_address">ای پی ادرس خود را وارد کنید</string>
+    <string name="about_us"> ارتباط با ما</string>
+    <string name="enter_your_ip_address_error">لطفا آدرس مورد نظر را وارد کنید.</string>
+    <string name="enter_your_new_ip_address">لطفا آدرس جدید را وارد کنید.</string>
+    <string name="error_connection">AboutAsActivity</string>
+    <string name="saved_your_ip_address">ادرس مورد نظر ذخیره شد.</string>
+    <string name="updated_your_ip_address">آدرس بروز رسانی شد.</string>
+    <string name="contact">Reza Zavareh\n\nreza.zavareh7@gmail.com</string>
+    <string name="dev_num">\n +989193617922 \n</string>
+    <string name="describe_technologies"> MVVM\nArchitecture components\n(LiveData, View Model, Room)\nOkHttp </string>
+    <string name="connected">ارتباط برقرار شد.</string>
+    <string name="connect_to_modem">اتصال به مودم</string>
+
+
+</resources>

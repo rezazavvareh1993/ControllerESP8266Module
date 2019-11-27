@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AboutAsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top">
+
+
+        <ImageView
+            android:id="@+id/imgWebSite"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/googlechrome"
+            app:layout_constraintBottom_toTopOf="@+id/imgWatsApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtWebSite"
+            app:layout_constraintTop_toBottomOf="@+id/image_logo_aboutAs"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <ImageView
+            android:id="@+id/imgGmail"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/gmail"
+            app:layout_constraintBottom_toTopOf="@id/cons_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtGmail"
+            app:layout_constraintTop_toBottomOf="@+id/imgWatsApp"
+            app:layout_constraintVertical_bias="0.838" />
+
+        <ImageView
+            android:id="@+id/imgWatsApp"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/whatsapp"
+            app:layout_constraintBottom_toTopOf="@+id/imgGmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtWhatsApp"
+            app:layout_constraintTop_toBottomOf="@+id/imgWebSite"
+            app:layout_constraintVertical_bias="0.657" />
+
+        <ImageView
+            android:id="@+id/image_logo_aboutAs"
+            android:layout_width="282dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066"
+            app:srcCompat="@drawable/shian11" />
+
+        <TextView
+            android:id="@+id/txtWebSite"
+            android:layout_width="213dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="http://www.shian-sana.ir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgWebSite"
+            app:layout_constraintBottom_toTopOf="@+id/txtWhatsApp"
+            app:layout_constraintTop_toBottomOf="@+id/image_logo_aboutAs"
+            tools:layout_editor_absoluteX="56dp" />
+
+        <TextView
+            android:id="@+id/txtGmail"
+            android:layout_width="213dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="info@shian-sana.ir"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgGmail"
+            app:layout_constraintBottom_toTopOf="@id/cons_layout"
+            app:layout_constraintTop_toBottomOf="@+id/txtWhatsApp"
+            tools:layout_editor_absoluteX="56dp" />
+
+        <TextView
+            android:id="@+id/txtWhatsApp"
+            android:layout_width="213dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="+98 9907226210"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgWatsApp"
+            app:layout_constraintBottom_toTopOf="@+id/txtGmail"
+            app:layout_constraintTop_toBottomOf="@+id/txtWebSite"
+            tools:layout_editor_absoluteX="56dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtGmail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Contact To Developer"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/describe"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/describe"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/contact"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/technologies"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/dev_num"
+                android:gravity="center"
+                android:text="@string/dev_num"
+                app:layout_constraintTop_toBottomOf="@id/describe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/technologies"/>
+
+            <TextView
+                android:id="@+id/technologies"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Technologies"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/describe"
+                app:layout_constraintBottom_toTopOf="@id/describe_technologies"/>
+            <TextView
+                android:id="@+id/describe_technologies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/describe_technologies"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dev_num"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
