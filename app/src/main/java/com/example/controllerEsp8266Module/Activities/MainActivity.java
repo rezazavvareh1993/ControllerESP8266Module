@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void findViews() {
         btnOneDevice = findViewById(R.id.btn_a_device);
         btnSmartHouse = findViewById(R.id.btn_smart_house);
-        btnConnectToModem = findViewById(R.id.btn_connect_modem);
+        btnConnectToModem = findViewById(R.id.btn_connect_modem_in_main_activity);
     }
 
     private void moveToActivity(){
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         btnConnectToModem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getBaseContext(), ConnectToModemAvtivity.class);
+                intent = new Intent(getBaseContext(), ConnectToModemActivity.class);
                 startActivity(intent);
             }
         });

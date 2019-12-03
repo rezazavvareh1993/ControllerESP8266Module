@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.controllerEsp8266Module.Activities.ConnectToModemAvtivity">
+    tools:context="com.example.controllerEsp8266Module.Activities.ConnectToModemActivity">
 
     <ImageView
         android:id="@+id/image_logo_aboutAs"
@@ -22,9 +22,11 @@
         android:id="@+id/edt_ssid_modem"
         android:layout_width="400dp"
         android:layout_height="60dp"
-        android:hint="SSID"
+        android:hint="@string/modem_ssid"
+        android:background="@drawable/btn_shape_local_and_remote_disable"
         android:padding="10dp"
         android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_wifi_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_logo_aboutAs"
@@ -35,22 +37,24 @@
         android:id="@+id/edt_password_modem"
         android:layout_width="400dp"
         android:layout_height="60dp"
-        android:hint="Password"
+        android:hint="@string/modem_password"
         android:padding="10dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_ssid_modem"
-        app:layout_constraintBottom_toTopOf="@id/btn_connect_to_modem_connect_to_modem_activity"
+        app:layout_constraintBottom_toTopOf="@id/btn_connect_in_connect_to_modem_activity"
+        android:background="@drawable/btn_shape_local_and_remote_disable"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
         tools:layout_editor_absoluteY="741dp" />
 
     <Button
-        android:id="@+id/btn_connect_to_modem_connect_to_modem_activity"
+        android:id="@+id/btn_connect_in_connect_to_modem_activity"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_marginStart="4dp"
         android:background="@drawable/btn_shape"
-        android:text="Connect"
+        android:text="@string/connect"
         android:textSize="16sp"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"

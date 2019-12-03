@@ -15,7 +15,7 @@
         android:roundIcon="@drawable/shian11"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.ConnectToModemAvtivity">
+        <activity android:name=".Activities.ConnectToModemActivity">
 
         </activity>
         <activity

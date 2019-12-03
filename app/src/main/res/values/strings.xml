@@ -15,6 +15,10 @@
     <string name="describe_technologies"> MVVM\nArchitecture components\n(LiveData, View Model, Room)\nOkHttp </string>
     <string name="connected">ارتباط برقرار شد.</string>
     <string name="connect_to_modem">اتصال به مودم</string>
+    <string name="suggest_connect_to_modem">برای اتصال به مودم برق کلید رو قطع و وصل کنید</string>
+    <string name="connect">اتصال </string>
+    <string name="modem_ssid">نام مودم خود را وارد کنید</string>
+    <string name="modem_password">رمز مودم خود را وارد کنید</string>
 
 
 </resources>
